@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "item": "caneta",
+        "estoque": 10,
+        "descricao": "serve para escrever",
+        "ativo": true
+    },
+    {
+        "id": 2,
+        "item": "lapis",
+        "estoque": 5,
+        "descricao": "serve para desenhar",
+        "ativo": true
+    },
+    {
+        "id": 3,
+        "item": "boracha",
+        "estoque": 300,
+        "descricao": "serve para apagar",
+        "ativo": true
+    },
+    {
+        "id": 4,
+        "item": "boracha",
+        "estoque": 300,
+        "descricao": "serve para apagar",
+        "ativo": true
+    },
+    {
+        "id": 5,
+        "item": "boracha",
+        "estoque": 300,
+        "descricao": "serve para apagar",
+        "ativo": true
+    }
+]
