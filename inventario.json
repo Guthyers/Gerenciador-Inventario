@@ -19,19 +19,5 @@
         "estoque": 300,
         "descricao": "serve para apagar",
         "ativo": true
-    },
-    {
-        "id": 4,
-        "item": "boracha",
-        "estoque": 300,
-        "descricao": "serve para apagar",
-        "ativo": true
-    },
-    {
-        "id": 5,
-        "item": "boracha",
-        "estoque": 300,
-        "descricao": "serve para apagar",
-        "ativo": true
     }
 ]

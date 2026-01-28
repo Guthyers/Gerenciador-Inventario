@@ -1,19 +1,19 @@
 import json
-from rich import print
+from rich import print # biblioteca c/ funções grafica emoji, tabelas e cores
 
 
-with open('inventario.json', 'r') as inventariojson: # as é o mesmo que definir apelido 
+with open('inventario.json', 'r') as inventariojson: # as é o mesmo que definir apelido # r para leitura 
     arquivodedados = json.load(inventariojson)
-#print(json.dumps(leitura, indent=4)) # O indent deixa o print bonito
+
 
 
 class Gerenciamento:                                                                                  
 
-    def __init__(self, dados): #dados está recebendo o conteudo do json
+    def __init__(self, dados): # dados está recebendo o conteudo do json
         self.dados = dados
 
     def listar(self):
-        return self.dados
+        return self.dados # me retorna toda a informação do dados
 
     def consultar(self, nome_procurado):
         for registro in self.dados:
@@ -34,13 +34,13 @@ class Gerenciamento:
 
         self.dados.append(novo_item)
 
-        with open ("inventario.json", "w", encoding="utf-8") as arquivo:
+        with open ("inventario.json", "w", encoding="utf-8") as arquivo: # w para gravação
             json.dump(self.dados, arquivo, indent=4, ensure_ascii=False)
 
         return "item adicionado com sucesso"
 
-cliente = Gerenciamento(arquivodedados)
-c1 = Gerenciamento(arquivodedados)
+cliente = Gerenciamento(arquivodedados) #cliente recebe a classe que instância arquivodedados, no caso o json   
 
-cliente.listar()
-print(c1.consultar("caneta"))
+
+#cliente.listar() #cliente chama a função listar 
+print(cliente.listar()) #exibe a lista
